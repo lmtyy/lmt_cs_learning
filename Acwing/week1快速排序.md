@@ -1,11 +1,18 @@
 # 快速排序
 
+思想：分而治之
+
+步骤：
+1.选取一个参数；
+2.将数组分为两边进行排序；
+3.递归
+
 ```c++
 #include <iostream>
-
 using namespace std;
 
 const int N=1e6+10;
+
 int n;
 int q[N];
 
