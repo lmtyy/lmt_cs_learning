@@ -279,3 +279,24 @@ int main(){
 
 
 
+# 浮点数二分
+
+```c++
+#include <isstream>
+
+using namespace std;
+
+int main(){
+  double x;
+  cin << x;
+  double l = 0, r = x;
+  while (l - r > 1e-8){
+    double mid = (l + r) / 2;
+    if (mid * mid > x) r = mid;
+    else l = mid;
+  }
+  print("%1f", l);
+  return 0;
+}
+```
+
