@@ -155,7 +155,7 @@ void merge_sort(int q[], int l, int r){
       else tep[k++] = q[j++];
   while (i <= mid) tep[k++] = q[i++];
   while (j <= r) tep[k++] = q[j++];
-  for (i = l, j=0; i <= r; i++, j++) q[i] = q[j];
+  for (i = l, j=0; i <= r; i++, j++) q[i] = tep[j];
 }
 
 int main(){
@@ -166,6 +166,8 @@ int main(){
   for (int i = 0; i < n; i++) printf("%d ", q[i]);
 }
 ```
+
+
 
 
 
